@@ -49,10 +49,15 @@
         border-radius: 5px;
         border: none;
         cursor: pointer;
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.281);
+        background-color: rgba(255, 255, 255, 0.045);
+        color: white;
+        
       }
 
       .reloadBtn:hover {
-        background-color: #eaeaea;
+        background-color: transparent;
       }
       
       .night {
@@ -1262,13 +1267,33 @@
       .not-loaded * {
         animation-play-state: paused !important;
       }
+      @media (min-width: 414px) and (max-width:896px) {
+      .title{
+        margin-top: 2rem;
+        text-align: center;
+        padding: 10px;
+        color:rgba(145, 233, 255, 0.677);
+      }
+      .reloadBtn{
+        margin-top: 5rem;
+        text-align: center;
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.281);
+        background-color: rgba(255, 255, 255, 0.045);
+        color: white;
+        
+      }
+      .reloadBtn:hover{
+        background-color: transparent;
+      }
+      }
     </style>
   </head>
 
   <body class="not-loaded">
-    <h1 class="title" style="padding:10px;">Feliz Aniversário, querida Djabi!!!</h1>
+    <h1 class="title">Feliz Aniversário, querida Djabi!!!</h1>
 
-    <button class="reloadBtn" onclick="bloomFlower()" style="background-color: transparent;color:white;border:2px;border-radius:50px;">Só tens que clicar aqui, doutora</button>
+    <button class="reloadBtn" onclick="bloomFlower()">Só tens que clicar aqui, doutora</button>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
